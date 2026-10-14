@@ -1,0 +1,101 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(235, 230, 230);
+    background-image: url("picture.webp");
+    background-size: cover;   
+    background-position: center;  
+}
+
+
+.container {
+    display: grid;
+
+    width: 100%;
+    min-height: 100vh;
+
+    gap: 15px;
+    padding: 15px;
+    grid-template-rows: 200px 250px 1fr;
+    grid-template-columns: 120px 1fr 1fr 250px 120px;
+
+    grid-template-areas:
+        "left header header header right"
+         "left content content img right"
+        "left footer footer footer right"
+    
+}
+
+header {
+    grid-area: header;
+    border: 2px solid black;
+    border-radius: 5px;
+    
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   background-color: lightblue;
+}
+
+
+
+article {
+    grid-area: content;
+    border: 2px solid black ;
+    background-color: rgb(221, 216, 216);
+}
+
+.border {
+    padding: 10px;  
+}
+
+.right {
+    grid-area: img;
+}
+
+.right img {
+    width: 250px;
+    height: 250px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(235, 230, 230);
+}
+
+
+h1{
+    font-size: 45px;
+}
+
+p{
+    font-size: 20px;
+}
+
+
+.stor{
+    font-size: 50px;
+}
+
+.liten{
+    font-size: 30px;
+}
+
+.stars{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 20%;
+    height: 55%;
+    padding: 0px;
+}
+
+.big{
+    font-size: 70px;
+}
+
+.HH{
+    width: 10%;
+    height: 10%;
+}
